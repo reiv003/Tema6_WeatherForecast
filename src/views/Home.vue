@@ -1,13 +1,13 @@
 <template>
-	<Sample />
+	<Forecast />
 </template>
 
 <script>
-	import Sample from "../components/Sample.vue";
+	import Forecast from "../components/Forecast.vue";
 
 	export default {
 		components: {
-			Sample,
+			Forecast,
 		}
 	};
 </script>
