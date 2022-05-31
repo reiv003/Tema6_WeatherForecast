@@ -1,21 +1,21 @@
 <template>
-	<h1>Værmelding</h1>
-	<div> {{ city }} </div>
-	<br>
-	<div> {{ tempToday }} </div>
-	<div> {{ windToday }} </div>
-	<div> {{ descToday }} </div>
-	<br>
-	<div> {{ forecastTemp1 }} </div>
-	<div> {{ forecastWind1 }} </div>
-	<br>
-	<div> {{ forecastTemp2 }} </div>
-	<div> {{ forecastWind2 }} </div>
-	<br>
-	<div> {{ forecastTemp3 }} </div>
-	<div> {{ forecastWind3 }} </div>
-	<button @click="changeCity">Endre by </button>
-	
+	<div class="content">
+		<div> {{ city }} </div>
+		<br>
+		<div> {{ tempToday }} </div>
+		<div> {{ windToday }} </div>
+		<div> {{ descToday }} </div>
+		<br>
+		<div> {{ forecastTemp1 }} </div>
+		<div> {{ forecastWind1 }} </div>
+		<br>
+		<div> {{ forecastTemp2 }} </div>
+		<div> {{ forecastWind2 }} </div>
+		<br>
+		<div> {{ forecastTemp3 }} </div>
+		<div> {{ forecastWind3 }} </div>
+		<button @click="changeCity">Endre by </button>
+	</div>	
 </template>
 
 <script>
@@ -23,7 +23,7 @@
 		
 		data() {
 			return {
-				city: 'stavanger',
+				city: 'oslo',
 				forecastTemp1: '',
 				forecastWind1: '',
 				forecastTemp2: '',

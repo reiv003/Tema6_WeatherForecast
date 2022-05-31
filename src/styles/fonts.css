@@ -1,8 +1,27 @@
-/*
 @font-face {
-	font-family: Arial;
-	src: url('/assets/fonts/Arial.ttf');
+	font-family: CutiveMono;
+	src: url('/assets/fonts/CutiveMono-Regular.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
-*/
+
+@font-face {
+	font-family: OpenSansCondensedBold;
+	src: url('/assets/fonts/OpenSans_Condensed-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: OpenSansCondensedLight;
+	src: url('/assets/fonts/OpenSans_Condensed-Light.ttf');
+	font-weight: lighter;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: OpenSansCondensedLightItalic;
+	src: url('/assets/fonts/OpenSans_Condensed-LightItalic.ttf');
+	font-weight: normal;
+	font-style: italic;
+}
