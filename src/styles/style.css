@@ -1,11 +1,57 @@
-body {
-	background-color: aliceblue;
+/* The container element is wrapped around all the components in the document (in App.vue). Rules that apply to the whole document are defined here. I've therefore placed the element at the top here, instead of below the semantic elements and classes. 
+
+These rules could be applied to the body element instead, but I received feedback in an earlier project that it might be better to wrap a div around all elements and apply rules to the container div (particularly regarding the grid rules). */
+
+#container {
+	background-color: var(--background-color);
+	width: 100vw;
+	height: 100vh;
+	font-family: "OpenSansCondensedLight";
+	font-size: 24px;
+	color: var(--main-text-color);
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	background-image: url(/assets/images/Cloud.svg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+h1 {
+	font-family: "CutiveMono";
+	font-size: 2.5em;
+}
+
+h2 {
+	font-family: "CutiveMono";
+	font-size: 2em;
+}
+
+header {
+	grid-column: 2 / span 10;
+	text-align: center;
+}
+
+footer {
+	grid-column: 1 / span 12;
+	text-align: center;
+	color: var(--secondary-text-color);
 }
 
 button {
-	background-color: rgb(59, 85, 107);
-	color: white;
+	background-color: var(--button-color);
+	color: var(--secondary-text-color);
 	border-radius: 5px;
 	padding: 5px;
 	margin: 5px;
+}
+
+.content {
+	grid-column: 2 / span 10;
+}
+
+@media (min-width: 460px) {
+	footer {
+		background-color: #FFF;
+	}
+
 }

@@ -1,3 +1,10 @@
 :root {
 	--sample-variable: 0.5em;
+	--background-color: #5F8FB1;
+	--main-text-color: #FFFFFF;
+	--secondary-text-color: #2F3245;
+	--button-color: #FFDCC3;
+	--divider-color: #A5B6C1;
+	--select-background-color: #F9FDFF;
+	--secondary-background-color: #40435C;
 }
