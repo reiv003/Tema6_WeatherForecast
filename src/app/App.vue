@@ -1,9 +1,9 @@
 <template>
-<div id="container">
-  <Header/>
-  <RouterView />
-  <Footer/>
-</div>
+  <div id="container">
+    <Header/>
+    <RouterView />
+    <Footer/>
+  </div>
 </template>
 
 <script>

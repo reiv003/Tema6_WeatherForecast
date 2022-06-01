@@ -23,7 +23,7 @@
 		
 		data() {
 			return {
-				city: 'oslo',
+				city: 'bergen',
 				forecastTemp1: '',
 				forecastWind1: '',
 				forecastTemp2: '',
@@ -44,6 +44,8 @@
 
 		methods: {
 			async fetchNew() {
+				/* This API sometimes does not return any data for a given city. If the site does not display any data, try changing the city field under data() return, or look directly at the API to see if the data is present there for that city. */
+
 				let url = (`https://goweather.herokuapp.com/weather/${this.city}`);
 				const res = await fetch(url);
 				const { temperature, wind, description, forecast } = await res.json();
@@ -64,7 +66,7 @@
 				
 		
 			},
-
+			/*Does not work yet*/
 			changeCity() {
 				this.city = 'bergen';
 			}

@@ -45,6 +45,15 @@ button {
 	margin: 5px;
 }
 
+a,
+a:visited {
+	color: var(--main-text-color);
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 .content {
 	grid-column: 2 / span 10;
 }
